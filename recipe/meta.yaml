@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   # rttf2pt1 dependency not available on windows
   skip: true  # [win]
   rpaths:
