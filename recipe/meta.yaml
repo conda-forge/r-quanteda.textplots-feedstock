@@ -1,4 +1,4 @@
-{% set version = "0.94.2" %}
+{% set version = "0.94.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quanteda.textplots_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quanteda.textplots/quanteda.textplots_{{ version }}.tar.gz
-  sha256: 6649cfba86ed34cd81a9951bb392700697e095f5986381ed9d2fa87959a85bb9
+  sha256: 29dc0f92d033c670d6d463fc6ec4cdc26112d634959e057e7c21a673291dbf15
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   # rttf2pt1 dependency not available on windows
   skip: true  # [win]
   rpaths:
