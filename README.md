@@ -3,6 +3,7 @@ About r-quanteda.textplots-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-quanteda.textplots-feedstock/blob/main/LICENSE.txt)
 
+
 About r-quanteda.textplots
 --------------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=quanteda.textplots
 Package license: GPL-3.0-only
 
 Summary: Plotting functions for visualising textual data.  Extends 'quanteda' and related packages with plot methods designed specifically for text data, textual statistics, and models fit to textual data. Plot types include word clouds, lexical dispersion plots, scaling plots, network visualisations, and word 'keyness' plots.
+
 About r-quanteda.textplots
 --------------------------
 
@@ -146,7 +148,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
