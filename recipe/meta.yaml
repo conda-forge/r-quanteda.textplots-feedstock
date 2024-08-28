@@ -1,4 +1,4 @@
-{% set version = "0.94.4" %}
+{% set version = "0.95" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quanteda.textplots_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quanteda.textplots/quanteda.textplots_{{ version }}.tar.gz
-  sha256: 4af0146d3ec174e9ac79b0626a6725f81e94537ad681dcb0162e940c551bb429
+  sha256: 3373c09df7e6bbb4b8f6dbdfa28706fcb8c8896704f76514857930be5ecbead1
 
 build:
   merge_build_host: true  # [win]
@@ -24,7 +24,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
