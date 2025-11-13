@@ -1,4 +1,4 @@
-{% set version = "0.96" %}
+{% set version = "0.96.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quanteda.textplots_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quanteda.textplots/quanteda.textplots_{{ version }}.tar.gz
-  sha256: dfac9366dbef9547748edeeea4653b0805f5fa1eb40e60245bce294550717243
+  sha256: b637b18fb1e0c6f19a47377eefa5265efe17a1be722102cf13f296cae74c2ae4
 
 build:
   number: 0
