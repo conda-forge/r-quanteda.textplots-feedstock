@@ -12,7 +12,7 @@ source:
   sha256: dfac9366dbef9547748edeeea4653b0805f5fa1eb40e60245bce294550717243
 
 build:
-  number: 0
+  number: 1
   # rttf2pt1 dependency not available on windows
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
